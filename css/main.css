@@ -95,14 +95,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container {
-  border: 1px solid;
-  width: 80%; margin: 0 auto;
+  width: 80%; margin: 5% auto;
   min-width: 1in;
   max-width: 3in;
 }
 
-.chessboard {
+p {
+  display: inline-block;
+}
 
+.chessboard {
+  border: 1px solid;
 }
 /* Row Styles */
 .chessboard .row {
@@ -112,7 +115,7 @@ textarea {
 }
 .chessboard .row::before,
 .chessboard .row::after {
-  font-size: 500%;
+  font-size: 150%;
   position: absolute;
 }
 .chessboard .row::before {
@@ -120,6 +123,30 @@ textarea {
 }
 .chessboard .row::after {
   left: 100%;
+}
+.chessboard .rank-8::before,
+.chessboard .rank-8::after {
+  content: '8';
+}
+.chessboard .rank-7::before,
+.chessboard .rank-7::after {
+  content: '7';
+}
+.chessboard .rank-6::before,
+.chessboard .rank-6::after {
+  content: '6';
+}
+.chessboard .rank-5::before,
+.chessboard .rank-5::after {
+  content: '5';
+}
+.chessboard .rank-4::before,
+.chessboard .rank-4::after {
+  content: '4';
+}
+.chessboard .rank-3::before,
+.chessboard .rank-3::after {
+  content: '3';
 }
 .chessboard .rank-2::before,
 .chessboard .rank-2::after {
@@ -129,23 +156,25 @@ textarea {
 .chessboard .rank-1::after {
   content: '1';
 }
+
+
 /* END Row Styles */
 
 .chessboard .square {
-  background-color: cornflowerblue;
+  background-color: lightgrey;
   display: block;
-  width: 50%; padding-bottom: 50%;
-  outline: 1px solid red;
+  width: 12.5%; padding-bottom: 12.5%;
+  outline: 1px solid black;
   float: left;
 }
 .chessboard .row:nth-child(even) .square:nth-child(even) {
-  background-color: cornflowerblue;
+  background-color: lightgrey;
 }
 .chessboard .row:nth-child(even) .square:nth-child(odd) {
-  background-color: lightgray;
+  background-color: cornflowerblue;
 }
 .chessboard .square:nth-child(even) {
-  background-color: lightgray;
+  background-color: cornflowerblue;
 }
 
 .piece {
