@@ -96,8 +96,8 @@ textarea {
    ========================================================================== */
 .container {
   width: 80%; margin: 5% auto;
-  min-width: 1in;
-  max-width: 3in;
+  min-width: 2in;
+  max-width: 6in;
 }
 
 .top p {
@@ -105,7 +105,7 @@ textarea {
   display: inline-block;
   width: 12.5%;
   float: left;
-  font-size: 150%;
+  font-size: 200%;
   text-align: center;
 
 }
@@ -115,7 +115,7 @@ textarea {
   display: inline-block;
   width: 12.5%;
   float: left;
-  font-size: 150%;
+  font-size: 200%;
   text-align: center;
 
 }
@@ -132,8 +132,9 @@ textarea {
 }
 .chessboard .row::before,
 .chessboard .row::after {
-  font-size: 150%;
+  font-size: 200%;
   position: absolute;
+  text-align: center;
 }
 .chessboard .row::before {
   right: 100%;
@@ -141,6 +142,7 @@ textarea {
 .chessboard .row::after {
   left: 100%;
 }
+
 .chessboard .rank-8::before,
 .chessboard .rank-8::after {
   content: '8';
@@ -197,12 +199,105 @@ textarea {
 .piece {
 
 }
-.white {
-
+.white-pawn::before,
+.white-pawn::after {
+  content: "\2659";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
 }
-.rook {
-
+.white-rook::before {
+  content: "\2656";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
 }
+.white-knight::before {
+  content: "\2658";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.white-bishop::before {
+  content: "\2657";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.white-queen::before {
+  content: "\2655";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.white-king::before {
+  content: "\2654";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-pawn::before,
+.black-pawn::after {
+  content: "\265f";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-rook::before {
+  content: "\265c";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-knight::before {
+  content: "\265e";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-bishop::before {
+  content: "\265d";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-queen::before {
+  content: "\265b";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+.black-king::before {
+  content: "\265a";
+  position: absolute;
+  width: 12.5%;
+  text-align: center;
+  font-size: 300%;
+  margin: 0; padding: 0;
+}
+
 .piece-white-rook {
   /* What goes here? */
 }
