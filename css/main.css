@@ -100,18 +100,35 @@ textarea {
   max-width: 3in;
 }
 
-p {
+.top p {
+  margin: 0; padding: 0;
   display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 150%;
+  text-align: center;
+
+}
+
+.bottom p {
+  margin: 0; padding: 0;
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 150%;
+  text-align: center;
+
 }
 
 .chessboard {
-  border: 1px solid;
+
 }
 /* Row Styles */
 .chessboard .row {
   margin: 0; padding: 0;
   position: relative;
   clear: both;
+  border: 1px solid;
 }
 .chessboard .row::before,
 .chessboard .row::after {
