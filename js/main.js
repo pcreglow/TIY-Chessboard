@@ -1,15 +1,24 @@
 (function(window) {
-  $('.forward').click(function() {
-    chess.move(chess.game.move1);
-    chess.move(chess.game.move2);
-    chess.move(chess.game.move3);
-    chess.move(chess.game.move4);
-    chess.move(chess.game.move5);
-    chess.move(chess.game.move6);
-    chess.move(chess.game.move7);
-    chess.move(chess.game.move8);
-    chess.move(chess.game.move9);
-  });
+
+
+    /*$('.forward').click(function() {
+        chess.move(chess.game[0]);
+    });*/
+
+    $('.end').click(function() {
+        for (i = 0; i < chess.game.length; i++) {
+            chess.move(chess.game[i]);
+        };
+    });
+
+    //StackOverflow assistance for counter:
+    //http://stackoverflow.com/questions/16549183/jquery-iterate-through-an-array-by-using-onclick
+
+    $('.forward').click(function() {
+        chess.counter = (chess.counter + 1) % chess.game.length;
+        chess.move(chess.game[chess.counter]);
+    });
+
 
     /*$('.rank-2 > .file-d').removeClass('white-pawn');
     $('.rank-4 > .file-d').addClass('white-pawn');
