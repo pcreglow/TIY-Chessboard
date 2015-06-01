@@ -1,4 +1,4 @@
-//Sunday meetup: @mstaehling @pcreglow @jessyriordan @epicurean306 @jorgehjr84
+//Sunday meetup: @sjoyal @mstaehling @jessyriordan @epicurean306 @jorgehjr84
 
 (function(window) {
 
