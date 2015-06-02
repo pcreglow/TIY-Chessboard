@@ -6,8 +6,8 @@
     });*/
 
     $('.end').click(function() {
-        for (i = 0; i < chess.game.length; i++) {
-            chess.move(chess.game[i]);
+        for (chess.counter; chess.counter < chess.game.length; chess.counter++) {
+            chess.move(chess.game[chess.counter]);
         };
     });
 
@@ -15,8 +15,13 @@
     //http://stackoverflow.com/questions/16549183/jquery-iterate-through-an-array-by-using-onclick
 
     $('.forward').click(function() {
-        chess.counter = (chess.counter + 1) % chess.game.length;
-        chess.move(chess.game[chess.counter]);
+        // chess.counter = (chess.counter + 1) % chess.game.length;
+
+         if (chess.counter < chess.game.length) {
+           chess.move(chess.game[chess.counter]);
+           chess.counter = chess.counter + 1;
+         }
+        //chess.move(chess.game[chess.counter]);
     });
 
 
